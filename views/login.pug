@@ -1,0 +1,12 @@
+extends base
+
+block content
+    .container(style='margin:auto;')
+        form(action='/login' method='POST')
+            .form-group
+                label(for='uname') Username
+                input#uname.form-control(type='text' name='username' placeholder='Enter your username')
+                p
+                label(for='passw') Password
+                input#passw.form-control(type='password' name='password' placeholder='Enter your password')
+            button(type='submit') Submit
